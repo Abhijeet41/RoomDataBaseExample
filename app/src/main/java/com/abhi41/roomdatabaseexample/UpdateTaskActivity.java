@@ -12,7 +12,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.abhi41.roomdatabaseexample.DatabaseClient.DatabaseClient;
+import com.abhi41.roomdatabaseexample.DataBase.AppDatabase;
 import com.abhi41.roomdatabaseexample.Model.Task;
 
 public class UpdateTaskActivity extends AppCompatActivity {
@@ -105,7 +105,7 @@ public class UpdateTaskActivity extends AppCompatActivity {
                 task.setDesc(sDesc);
                 task.setFinishBy(sFinishBy);
                 task.setFinished(checkBoxFinished.isChecked());
-                DatabaseClient.getInstance(getApplicationContext()).getAppDatabase()
+                AppDatabase.getInstance(getApplicationContext())
                         .taskDao()
                         .update(task);
                 return null;
@@ -128,7 +128,7 @@ public class UpdateTaskActivity extends AppCompatActivity {
         class DeleteTask extends AsyncTask<Void,Void,Void>{
             @Override
             protected Void doInBackground(Void... voids) {
-                DatabaseClient.getInstance(getApplicationContext()).getAppDatabase()
+                AppDatabase.getInstance(getApplicationContext())
                         .taskDao()
                         .delete(task);
                 return null;

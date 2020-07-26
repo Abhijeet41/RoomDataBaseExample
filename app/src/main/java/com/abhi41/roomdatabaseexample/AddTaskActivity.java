@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.abhi41.roomdatabaseexample.DatabaseClient.DatabaseClient;
+import com.abhi41.roomdatabaseexample.DataBase.AppDatabase;
 import com.abhi41.roomdatabaseexample.Model.Task;
 
 public class AddTaskActivity extends AppCompatActivity {
@@ -70,7 +70,7 @@ public class AddTaskActivity extends AppCompatActivity {
                 task.setFinished(false);
 
                 //adding to database
-                DatabaseClient.getInstance(getApplicationContext()).getAppDatabase()
+                AppDatabase.getInstance(getApplicationContext())
                         .taskDao()
                         .insert(task);
 

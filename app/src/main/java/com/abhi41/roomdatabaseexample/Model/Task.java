@@ -1,12 +1,15 @@
 package com.abhi41.roomdatabaseexample.Model;
 
 import androidx.room.ColumnInfo;
+import androidx.room.Database;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import com.abhi41.roomdatabaseexample.DataBase.AppDatabase;
+
 import java.io.Serializable;
 
-@Entity
+@Entity(tableName = AppDatabase.MyToDos)
 public class Task implements Serializable {
 
     @PrimaryKey(autoGenerate = true)

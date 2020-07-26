@@ -3,7 +3,17 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <value>
             <set />
           </value>
@@ -23,6 +33,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/roomdatabaseexample/DatabaseClient/DataConverter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/roomdatabaseexample/DatabaseClient/DatabaseClient.java">
           <value>
             <set />
@@ -34,6 +49,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/roomdatabaseexample/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/roomdatabaseexample/Model/HeroTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/roomdatabaseexample/Model/HerosModel.java">
           <value>
             <set />
           </value>
@@ -69,6 +94,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/mosamjob_android_candidate/app/src/main/java/com/natureinfotech/candidate/model/room/DaoAccess.java">
           <value>
             <set />
           </value>
